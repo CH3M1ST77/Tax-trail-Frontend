@@ -1,0 +1,21 @@
+/* Global cursor styles for clickable elements */
+button,
+a,
+[role="button"],
+select,
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
+
+/* Disabled buttons should show not-allowed */
+button:disabled,
+button.disabled {
+  cursor: not-allowed;
+}
+
+/* Input fields should show text cursor */
+input:not([type="submit"]):not([type="button"]),
+textarea {
+  cursor: text;
+}
